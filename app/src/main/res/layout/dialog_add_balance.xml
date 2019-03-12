@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@color/white"
+    android:padding="50dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_above="@+id/add_balance_layout"
+        android:src="@drawable/hyperledger"/>
+
+    <RelativeLayout
+        android:id="@+id/add_balance_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/add_amount_etd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="€0"
+            android:inputType="number"
+            android:textColorHint="@color/light_black"
+            android:singleLine="true"
+            android:paddingStart="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:background="@drawable/rounded_edittext"/>
+
+
+        <Button
+            android:id="@+id/add_balance_btn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/add_amount_etd"
+            android:layout_marginTop="30dp"
+            android:text="ADD BALANCE"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_button"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

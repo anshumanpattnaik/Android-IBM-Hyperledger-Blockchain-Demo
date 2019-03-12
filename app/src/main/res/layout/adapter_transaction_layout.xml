@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/transcations_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RelativeLayout
+            android:id="@+id/transcation_txt_layout"
+            android:layout_width="150dp"
+            android:layout_height="50dp">
+
+            <com.example.ibmhyperlegerblockchain.fonts.TextViewRobotoRegular
+                android:id="@+id/transcation_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="10dp"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:singleLine="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/receiver_txt_layout"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/transcation_txt_layout">
+
+            <com.example.ibmhyperlegerblockchain.fonts.TextViewRobotoRegular
+                android:id="@+id/receiver_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/amount_txt_layout"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/receiver_txt_layout">
+
+            <com.example.ibmhyperlegerblockchain.fonts.TextViewRobotoRegular
+                android:id="@+id/amount_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
