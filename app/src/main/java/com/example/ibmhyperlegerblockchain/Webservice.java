@@ -12,7 +12,7 @@ import java.net.URL;
 import static com.example.ibmhyperlegerblockchain.constants.Constants.LOG_TAG;
 
 public class Webservice {
-    public static final String BASE_URL = "http://192.168.2.12:3000/api";
+    public static final String BASE_URL = "http://YOUR_LOCAL_ADDRESS/api";
 
     public static final String CUSTOMER_SIGN_UP = "/Customer";
     public static final String ADD_BALANCE = "/bankAccount";
